@@ -1,0 +1,99 @@
+* {
+  font-family: Lato, arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(32, 33, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  border: solid rgb(70, 70, 70) 0.5px;
+  color: #ababab;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+}
+
+.app-container p {
+  text-align: center;
+}
+.app-container-title {
+  background-color: rgb(70, 70, 70);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+}
+
+.app-container h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.units-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+}
+
+.unit-container {
+  width: 200px;
+  margin: 5px;
+}
+
+input {
+  width: 178px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: transparent;
+  color: #fff;
+  border: solid rgb(70, 70, 70) 0.5px;
+}
+
+select {
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(70, 70, 70);
+  border: solid rgb(70, 70, 70) 0.5px;
+  color: #ababab;
+}
+select:focus,
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 750px) {
+  .app-container {
+    margin: 0 10px;
+  }
+  .units-container {
+    flex-direction: column;
+    padding: 0 7% 7% 7%;
+  }
+  .unit-container {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+  }
+  input {
+    width: 93%;
+    border-radius: 5px 0 0 5px;
+  }
+  select {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+  }
+}
